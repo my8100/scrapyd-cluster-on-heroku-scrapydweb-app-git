@@ -1,0 +1,2 @@
+pip==19.0.3
+git+git://github.com/my8100/scrapydweb.git
