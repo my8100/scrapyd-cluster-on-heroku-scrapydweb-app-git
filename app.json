@@ -11,19 +11,34 @@
             "required": true
         },
         "SCRAPYD_SERVER_2": {
-            "description": "See SCRAPYD_SERVER_1",
-            "value": "svr-2.herokuapp.com:80#label1",
+            "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
+            "value": "svr-2.herokuapp.com:80#label",
             "required": false
         },
         "SCRAPYD_SERVER_3": {
-            "description": "See SCRAPYD_SERVER_1",
-            "value": "svr-3.herokuapp.com:80#group2",
+            "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
+            "value": "svr-3.herokuapp.com:80#group",
             "required": false
         },
         "SCRAPYD_SERVER_4": {
-            "description": "See SCRAPYD_SERVER_1",
-            "value": "svr-4.herokuapp.com:80#group2",
+            "description": "See SCRAPYD_SERVER_1, type del to ignore the environment variable",
+            "value": "svr-4.herokuapp.com:80#group",
             "required": false
+        },
+        "ENABLE_AUTH": {
+            "description": "The default is False, set it to True to enable basic auth for web UI.",
+            "value": "False",
+            "required": true
+        },
+        "USERNAME": {
+            "description": "In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.",
+            "value": "admin",
+            "required": true
+        },
+        "PASSWORD": {
+            "description": "In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.",
+            "value": "scrapydweb",
+            "required": true
         },
         "TZ": {
             "description": "Timezone of the app, get it via: python -c \"import tzlocal; print(tzlocal.get_localzone())\"",
