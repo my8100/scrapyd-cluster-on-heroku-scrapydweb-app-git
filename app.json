@@ -1,5 +1,5 @@
 {
-    "name": "ScrapydWeb app (git repo, unstable)",
+    "name": "ScrapydWeb app (via git, unstable)",
     "description": "How to set up Scrapyd cluster on Heroku",
     "repository": "https://github.com/my8100/scrapyd-cluster-on-heroku",
     "logo": "https://raw.githubusercontent.com/my8100/files/master/scrapydweb/icons/spiderman.png",
