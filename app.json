@@ -49,6 +49,11 @@
             "description": "The default is False, set it to True to change the logging level from WARNING to DEBUG.",
             "value": "False",
             "required": false
+        },
+        "DATABASE_URL": {
+            "description": "The default is unset, set it to \"mysql://username:password@127.0.0.1:3306\" or \"postgres://username:password@127.0.0.1:5432\" to improve concurrency.",
+            "value": "unset",
+            "required": false
         }
     }
 }

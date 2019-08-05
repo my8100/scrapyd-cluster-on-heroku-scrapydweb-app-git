@@ -18,7 +18,9 @@ import re
 # The default is '0.0.0.0'.
 SCRAPYDWEB_BIND = '0.0.0.0'
 # Accept connections on the specified port, the default is 5000.
-SCRAPYDWEB_PORT = 5000
+# SCRAPYDWEB_PORT = 5000
+# https://devcenter.heroku.com/articles/runtime-principles#web-servers
+# The port to bind to is assigned by Heroku as the PORT environment variable.
 SCRAPYDWEB_PORT = int(os.environ['PORT'])
 
 # The default is False, set it to True to enable basic auth for the web UI.
