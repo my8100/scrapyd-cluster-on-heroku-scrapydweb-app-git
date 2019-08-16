@@ -58,6 +58,7 @@ SCRAPYD_SERVERS = [
     ('username', 'password', 'localhost', '6801', 'group'),
 ]
 SCRAPYD_SERVERS = []
+import re
 for k, v in os.environ.items():
     k = k.strip()
     v = v.strip()
